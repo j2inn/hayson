@@ -35,7 +35,7 @@ For YAML support...
 Add the following entry...
 
       "yaml.schemas": {
-      	"https://raw.githubusercontent.com/j2inn/hayson/master/hayson-json-schema.json": ".hayson.yaml"
+        "https://raw.githubusercontent.com/j2inn/hayson/master/hayson-json-schema.json": ".hayson.yaml"
       }
 
 Any files that end with `.hayson.yaml` will now have error checking and auto-complete for Hayson code.
@@ -46,32 +46,32 @@ Any files that end with `.hayson.yaml` will now have error checking and auto-com
 
 Hayson has an [OpenAPI schema](hayson-openapi-schema.yaml) that can be referenced externally by other OpenAPI documents. Here's an example...
 
-    	openapi: 3.0.2
-    	info:
-    		title: Hayson test
-    		version: 1.0.0
-    		description: A simple test document
-    	paths:
-    		/foo:
-    			get:
-    				summary: Request a foo grid
-    				responses:
-    					'200':
-    						description: Returns a grid!
-    						content:
-    							application/json:
-    								schema:
-    									$ref: "https://raw.githubusercontent.com/j2inn/hayson/master/hayson-openapi-schema.yaml#/components/schemas/grid"
-    								example:
-    									_kind: grid
-    									meta:
-    										ver: '3.0'
-    									cols:
-    										- name: id
-    									rows:
-    										- id:
-    												_kind: ref
-    												val: id1
-    										- id:
-    												_kind: ref
-    												val: id2
+    openapi: 3.0.2
+    info:
+      title: Hayson test
+      version: 1.0.0
+      description: A simple test document
+    paths:
+      /foo:
+        get:
+          summary: Request a foo grid
+          responses:
+            '200':
+              description: Returns a grid!
+              content:
+                application/json:
+                  schema:
+                    $ref: "https://raw.githubusercontent.com/j2inn/hayson/master/hayson-openapi-schema.yaml#/components/schemas/grid"
+                  example:
+                    _kind: grid
+                    meta:
+                      ver: '3.0'
+                    cols:
+                      - name: id
+                    rows:
+                      - id:
+                          _kind: ref
+                          val: id1
+                      - id:
+                          _kind: ref
+                          val: id2
