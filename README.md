@@ -35,17 +35,17 @@ Here’s an example of a Zinc grid…
 Zinc can also be encoded to a JSON format. For example…
 
     {
-    		"meta": {"ver":"3.0", "projName":"test"},
-    		"cols":[
-    				{"name":"dis", "dis":"Equip Name"},
-    				{"name":"equip"},
-    				{"name":"siteRef"},
-    				{"name":"installed"}
-    		],
-    		"rows":[
-    				{"dis":"RTU-1", "equip":"m:", "siteRef":"r:153c-699a HQ", "installed":"d:2005-06-01"},
-    				{"dis":"RTU-2", "equip":"m:", "siteRef":"r:153c-699a HQ", "installed":"d:999-07-12"}
-    		]
+      "meta": {"ver":"3.0", "projName":"test"},
+      "cols":[
+        {"name":"dis", "dis":"Equip Name"},
+        {"name":"equip"},
+        {"name":"siteRef"},
+        {"name":"installed"}
+      ],
+      "rows":[
+        {"dis":"RTU-1", "equip":"m:", "siteRef":"r:153c-699a HQ", "installed":"d:2005-06-01"},
+        {"dis":"RTU-2", "equip":"m:", "siteRef":"r:153c-699a HQ", "installed":"d:999-07-12"}
+      ]
     }
 
 ## Problems with Zinc
@@ -84,151 +84,151 @@ See the supported [schemas](schemas.md) for how to integrate Hayson with IDEs an
 Here's a simple grid of sites encoded using Hayson...
 
     {
-    	"_kind":"grid",
-    	"meta":{
-    			"ver":"3.0"
-    	},
-    	"cols":[
-    			"id",
-    			"area",
-    			"dis",
-    			"geoAddr",
-    			"geoCoord",
-    			"geoCountry",
-    			"geoPostalCode",
-    			"geoState",
-    			"geoStreet",
-    			"hq",
-    			"metro",
-    			"occupiedEnd",
-    			"occupiedStart",
-    			"primaryFunction",
-    			"regionRef",
-    			"site",
-    			"store",
-    			"storeNum",
-    			"tz",
-    			"weatherRef",
-    			"yearBuilt",
-    			"mod"
-    	],
-    	"rows":[
-    			{
-    				"id":{
-    						"_kind":"ref",
-    						"val":"p:demo:r:25aa2abd-c365ce5b",
-    						"dis":"Headquarters"
-    				},
-    				"area":{
-    						"_kind":"number",
-    						"val":140797,
-    						"unit":"ft²"
-    				},
-    				"dis":"Headquarters",
-    				"geoAddr":"600 W Main St, Richmond, VA",
-    				"geoCity":"Richmond",
-    				"geoCoord":{
-    						"_kind":"coord",
-    						"lat":37.545826,
-    						"lng":-77.449188
-    				},
-    				"geoCountry":"US",
-    				"geoPostalCode":"23220",
-    				"geoState":"VA",
-    				"geoStreet":"600 W Main St",
-    				"hq":{
-    						"_kind":"marker"
-    				},
-    				"metro":"Richmond",
-    				"occupiedEnd":{
-    						"_kind":"time",
-    						"val":"18:00:00"
-    				},
-    				"occupiedStart":{
-    						"_kind":"time",
-    						"val":"08:00:00"
-    				},
-    				"primaryFunction":"Office",
-    				"regionRef":{
-    						"_kind":"ref",
-    						"val":"p:demo:r:25aa2abd-5c556aba",
-    						"dis":"Richmond"
-    				},
-    				"site":{
-    						"_kind":"marker"
-    				},
-    				"tz":"New_York",
-    				"weatherRef":{
-    						"_kind":"ref",
-    						"val":"p:demo:r:25aa2abd-a02bf086",
-    						"dis":"Richmond, VA"
-    				},
-    				"yearBuilt":1999,
-    				"mod":{
-    						"_kind":"dateTime",
-    						"val":"2020-01-09T18:17:34.232Z",
-    						"tz":"UTC"
-    				}
-    			},
-    			{
-    				"id":{
-    						"_kind":"ref",
-    						"val":"p:demo:r:25aa2abd-96516c18",
-    						"dis":"Short Pump"
-    				},
-    				"area":{
-    						"_kind":"number",
-    						"val":17122,
-    						"unit":"ft²"
-    				},
-    				"dis":"Short Pump",
-    				"geoAddr":"11282 W Broad St, Richmond, VA",
-    				"geoCity":"Glen Allen",
-    				"geoCoord":{
-    						"_kind":"coord",
-    						"lat":37.650338,
-    						"lng":-77.606105
-    				},
-    				"geoCountry":"US",
-    				"geoPostalCode":"23060",
-    				"geoState":"VA",
-    				"geoStreet":"11282 W Broad St",
-    				"metro":"Richmond",
-    				"occupiedEnd":{
-    						"_kind":"time",
-    						"val":"21:00:00"
-    				},
-    				"occupiedStart":{
-    						"_kind":"time",
-    						"val":"10:00:00"
-    				},
-    				"primaryFunction":"Retail Store",
-    				"regionRef":{
-    						"_kind":"Ref",
-    						"val":"p:demo:r:25aa2abd-5c556aba",
-    						"dis":"Richmond"
-    				},
-    				"site":{
-    						"_kind":"marker"
-    				},
-    				"store":{
-    						"_kind":"marker"
-    				},
-    				"storeNum":3,
-    				"tz":"New_York",
-    				"weatherRef":{
-    						"_kind":"ref",
-    						"val":"p:demo:r:25aa2abd-a02bf086",
-    						"dis":"Richmond, VA"
-    				},
-    				"yearBuilt":1999,
-    				"mod":{
-    						"_kind":"dateTime",
-    						"val":"2020-01-09T18:17:34.323Z",
-    						"tz":"UTC"
-    				}
-    			}
-    	]
+      "_kind": "grid",
+      "meta": {
+        "ver": "3.0"
+      },
+      "cols": [
+        "id",
+        "area",
+        "dis",
+        "geoAddr",
+        "geoCoord",
+        "geoCountry",
+        "geoPostalCode",
+        "geoState",
+        "geoStreet",
+        "hq",
+        "metro",
+        "occupiedEnd",
+        "occupiedStart",
+        "primaryFunction",
+        "regionRef",
+        "site",
+        "store",
+        "storeNum",
+        "tz",
+        "weatherRef",
+        "yearBuilt",
+        "mod"
+      ],
+      "rows": [
+        {
+          "id": {
+            "_kind": "ref",
+            "val": "p:demo:r:25aa2abd-c365ce5b",
+            "dis": "Headquarters"
+          },
+          "area": {
+            "_kind": "number",
+            "val": 140797,
+            "unit": "ft²"
+          },
+          "dis": "Headquarters",
+          "geoAddr": "600 W Main St, Richmond, VA",
+          "geoCity": "Richmond",
+          "geoCoord": {
+            "_kind": "coord",
+            "lat": 37.545826,
+            "lng": -77.449188
+          },
+          "geoCountry": "US",
+          "geoPostalCode": "23220",
+          "geoState": "VA",
+          "geoStreet": "600 W Main St",
+          "hq": {
+            "_kind": "marker"
+          },
+          "metro": "Richmond",
+          "occupiedEnd": {
+            "_kind": "time",
+            "val": "18:00:00"
+          },
+          "occupiedStart": {
+            "_kind": "time",
+            "val": "08:00:00"
+          },
+          "primaryFunction": "Office",
+          "regionRef": {
+            "_kind": "ref",
+            "val": "p:demo:r:25aa2abd-5c556aba",
+            "dis": "Richmond"
+          },
+          "site": {
+            "_kind": "marker"
+          },
+          "tz": "New_York",
+          "weatherRef": {
+            "_kind": "ref",
+            "val": "p:demo:r:25aa2abd-a02bf086",
+            "dis": "Richmond, VA"
+          },
+          "yearBuilt": 1999,
+          "mod": {
+            "_kind": "dateTime",
+            "val": "2020-01-09T18:17:34.232Z",
+            "tz": "UTC"
+          }
+        },
+        {
+          "id": {
+            "_kind": "ref",
+            "val": "p:demo:r:25aa2abd-96516c18",
+            "dis": "Short Pump"
+          },
+          "area": {
+            "_kind": "number",
+            "val": 17122,
+            "unit": "ft²"
+          },
+          "dis": "Short Pump",
+          "geoAddr": "11282 W Broad St, Richmond, VA",
+          "geoCity": "Glen Allen",
+          "geoCoord": {
+            "_kind": "coord",
+            "lat": 37.650338,
+            "lng": -77.606105
+          },
+          "geoCountry": "US",
+          "geoPostalCode": "23060",
+          "geoState": "VA",
+          "geoStreet": "11282 W Broad St",
+          "metro": "Richmond",
+          "occupiedEnd": {
+            "_kind": "time",
+            "val": "21:00:00"
+          },
+          "occupiedStart": {
+            "_kind": "time",
+            "val": "10:00:00"
+          },
+          "primaryFunction": "Retail Store",
+          "regionRef": {
+            "_kind": "Ref",
+            "val": "p:demo:r:25aa2abd-5c556aba",
+            "dis": "Richmond"
+          },
+          "site": {
+            "_kind": "marker"
+          },
+          "store": {
+            "_kind": "marker"
+          },
+          "storeNum": 3,
+          "tz": "New_York",
+          "weatherRef": {
+            "_kind": "ref",
+            "val": "p:demo:r:25aa2abd-a02bf086",
+            "dis": "Richmond, VA"
+          },
+          "yearBuilt": 1999,
+          "mod": {
+            "_kind": "dateTime",
+            "val": "2020-01-09T18:17:34.323Z",
+            "tz": "UTC"
+          }
+        }
+      ]
     }
 
 ## Conclusion

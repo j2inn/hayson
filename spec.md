@@ -46,27 +46,27 @@ The kind can be determined via the use of ‘unit’.
     // units...
 
     {
-        "_kind": "number",
-        "val": 123,
-        "unit": "m"
+      "_kind": "number",
+      "val": 123,
+      "unit": "m"
     }
 
     // Positive infinity...
     {
-        "_kind": "number",
-        "val": "INF"
+      "_kind": "number",
+      "val": "INF"
     }
 
     // Negative infinity...
     {
-        "_kind": "number",
-        "val": "-INF"
+      "_kind": "number",
+      "val": "-INF"
     }
 
     // Not a number...
     {
-        "_kind": "number",
-        "val": "NaN"
+      "_kind": "number",
+      "val": "NaN"
     }
 
 #### Boolean
@@ -96,24 +96,24 @@ Dict's use of `_kind` is optional. If it’s an object and no kind is specified,
 
     // A dict with some values...
     {
-        "site": "A site",
-        "num": 123,
-        "bool": true
+      "site": "A site",
+      "num": 123,
+      "bool": true
     }
 
     // A dict with the optional kind specified...
     {
-        "_kind": "dict",
-        "site": "A site",
-        "num": 123,
-        "bool": true
+      "_kind": "dict",
+      "site": "A site",
+      "num": 123,
+      "bool": true
     }
 
 Keys with invalid tag names should be skipped. For example, 'Ignore' should be ignored since it starts with a capital letter...
 
     {
-        "Ignore": "This should be ignored",
-        "site": "A site"
+      "Ignore": "This should be ignored",
+      "site": "A site"
     }
 
 #### Grid
@@ -127,21 +127,21 @@ Rows and columns are optional if the grid is empty.
 Each row is encoded as a dict.
 
     {
-        "_kind": "grid",
-        "meta": { "ver":"3.0", "foo": "bar" },
-        "cols": [
-          {
-              "name: "id",
-              "meta": { "size": 123 }
-          },
-          {
-            "name": "dis"
-          }
-        ],
-        "rows": [
-            { "id": 1, "dis": "Hall" },
-            { "id": 2, "dis": "Bedroom" }
-        ]
+      "_kind": "grid",
+      "meta": { "ver":"3.0", "foo": "bar" },
+      "cols": [
+        {
+          "name: "id",
+          "meta": { "size": 123 }
+        },
+        {
+          "name": "dis"
+        }
+      ],
+      "rows": [
+          { "id": 1, "dis": "Hall" },
+          { "id": 2, "dis": "Bedroom" }
+      ]
     }
 
 #### Marker
@@ -177,9 +177,9 @@ A not available object.
 An object for a reference with optional display name (`dis`).
 
     {
-        "_kind": "ref",
-        "val": "/foo",
-        "dis": "Links to foo"
+      "_kind": "ref",
+      "val": "/foo",
+      "dis": "Links to foo"
     }
 
 #### Date
@@ -196,8 +196,8 @@ A date object.
 A time object.
 
     {
-        "_kind": "time",
-        "val": "15:47:41"
+      "_kind": "time",
+      "val": "15:47:41"
     }
 
 #### Date time
@@ -222,8 +222,8 @@ The val is a standard ISO 8601 formatted date time with offset.
 A URI object.
 
     {
-        "_kind": "uri",
-        "val": "https://j2inn.com"
+      "_kind": "uri",
+      "val": "https://j2inn.com"
     }
 
 #### Coordinate
@@ -231,9 +231,9 @@ A URI object.
 A coordinate object.
 
     {
-        "_kind": "coord",
-        "lat": 51.019371,
-        "lng": -0.453980
+      "_kind": "coord",
+      "lat": 51.019371,
+      "lng": -0.453980
     }
 
 #### XStr
@@ -241,9 +241,9 @@ A coordinate object.
 An XStr object.
 
     {
-        "_kind": "xstr",
-        "type": "Type",
-        "val": "value"
+      "_kind": "xstr",
+      "type": "Type",
+      "val": "value"
     }
 
 #### Symbol
@@ -251,8 +251,8 @@ An XStr object.
 A symbol object.
 
     {
-        "_kind": "symbol",
-        "val": "foo"
+      "_kind": "symbol",
+      "val": "foo"
     }
 
 ## Examples
