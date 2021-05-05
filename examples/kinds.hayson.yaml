@@ -1,0 +1,253 @@
+#
+# Copyright (c) 2011, Project-Haystack
+# Licensed under the Academic Free License version 3.0
+#
+# History:
+#   22 Feb 2011  Brian Frank  Creation
+#    6 Jan 2019  Brian Frank  New design
+#
+
+def:
+  _kind: symbol
+  val: marker
+docTaxonomy:
+  _kind: marker
+doc: |-
+  Marker labels a dict with typing information.
+  See [Kinds chapter]`docHaystack::Kinds#marker`.
+---
+def:
+  _kind: symbol
+  val: val
+docTaxonomy:
+  _kind: marker
+doc: Data value type
+---
+def:
+  _kind: symbol
+  val: scalar
+is:
+  _kind: symbol
+  val: val
+doc: Scalar is an atomic value kind
+---
+def:
+  _kind: symbol
+  val: na
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  Not available used to indicate invalid or missing data.
+  See [Kinds chapter]`docHaystack::Kinds#na`.
+---
+def:
+  _kind: symbol
+  val: remove
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  Singleton for remove operation.
+  See [Kinds chapter]`docHaystack::Kinds#remove`.
+---
+def:
+  _kind: symbol
+  val: bool
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  Boolean value 'true' or 'false'.
+  See [Kinds chapter]`docHaystack::Kinds#bool`.
+---
+def:
+  _kind: symbol
+  val: number
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  Integer or floating point numbers annotated with an optional unit.
+  See [Kinds chapter]`docHaystack::Kinds#number`.
+---
+def:
+  _kind: symbol
+  val: str
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  Unicode string of characters.
+  See [Kinds chapter]`docHaystack::Kinds#str`.
+---
+def:
+  _kind: symbol
+  val: uri
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  Universal resource identifier.
+  See [Kinds chapter]`docHaystack::Kinds#uri`.
+---
+def:
+  _kind: symbol
+  val: ref
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  Reference to an entity. Ref values are ASCII strings limited to the
+  following chars: a-z, A-Z, 0-9, underbar, colon, dash, dot, or tilde.
+  See [Kinds chapter]`docHaystack::Kinds#ref`.
+---
+def:
+  _kind: symbol
+  val: symbol
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  Symbol to a def. Symbol values are ASCII strings limited to the
+  following chars: a-z, A-Z, 0-9, underbar, colon, dash, dot.
+  See [Kinds chapter]`docHaystack::Kinds#symbol`.
+---
+def:
+  _kind: symbol
+  val: date
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  ISO 8601 date as year, month, day: '2011-06-07'.
+  See [Kinds chapter]`docHaystack::Kinds#date`.
+---
+def:
+  _kind: symbol
+  val: time
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  ISO 8601 time as hour, minute, seconds: '09:51:27.354'.
+  See [Kinds chapter]`docHaystack::Kinds#time`.
+---
+def:
+  _kind: symbol
+  val: dateTime
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  ISO 8601 timestamp followed by timezone identifier.
+  See [Kinds chapter]`docHaystack::Kinds#dateTime`.
+---
+def:
+  _kind: symbol
+  val: coord
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  Geographic coordinate in latitude/longitude in decimal degrees.
+  See [Kinds chapter]`docHaystack::Kinds#coord`.
+---
+def:
+  _kind: symbol
+  val: xstr
+is:
+  _kind: symbol
+  val: scalar
+doc: |-
+  Extended string - type name and string value encoding.
+  See [Kinds chapter]`docHaystack::Kinds#xstr`.
+---
+def:
+  _kind: symbol
+  val: list
+is:
+  _kind: symbol
+  val: val
+doc: |-
+  Ordered list of zero or more values.
+  See [Kinds chapter]`docHaystack::Kinds#list`.
+---
+def:
+  _kind: symbol
+  val: dict
+is:
+  _kind: symbol
+  val: val
+doc: |-
+  Map of name/value tag pairs.
+  See [Kinds chapter]`docHaystack::Kinds#dict`.
+---
+def:
+  _kind: symbol
+  val: grid
+is:
+  _kind: symbol
+  val: val
+doc: |-
+  Two dimension table of columns and rows.
+  See [Kinds chapter]`docHaystack::Kinds#grid`.
+---
+
+#
+# Numbers
+#
+
+def:
+  _kind: symbol
+  val: int
+is:
+  _kind: symbol
+  val: number
+doc: Unitless integer number
+---
+def:
+  _kind: symbol
+  val: duration
+is:
+  _kind: symbol
+  val: number
+doc: Number with a unit of time
+---
+def:
+  _kind: symbol
+  val: maxVal
+is:
+  _kind: symbol
+  val: number
+tagOn:
+  _kind: symbol
+  val: def
+doc: Inclusive maximum for a numeric value.
+---
+def:
+  _kind: symbol
+  val: minVal
+is:
+  _kind: symbol
+  val: number
+tagOn:
+  _kind: symbol
+  val: def
+doc: Inclusive minimum for a numeric value.
+---
+
+#
+# Of
+#
+
+def:
+  _kind: symbol
+  val: of
+is:
+  _kind: symbol
+  val: symbol
+tagOn:
+  _kind: symbol
+  val: def
+doc: Expected value type of a collection, reference, or choice

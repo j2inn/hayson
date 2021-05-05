@@ -1,0 +1,36 @@
+# This is a grid written with Hayson YAML...
+
+_kind: grid
+meta: { ver: '3.0' }
+cols: [ { name: id }, { name: dis }, { name: geoCity }, { name: site }, { name: area }, { name: mod } ]
+rows:
+- id:
+    _kind: ref
+    val: p:demo:r:273bc973-0e0d105d
+    dis: Carytown
+  site:
+    _kind: marker
+  dis: Carytown
+  geoCity: Richmond
+  area: 
+    _kind: number
+    val: 3149
+    unit: ft²
+  mod:
+    _kind: dateTime
+    val: '2020-11-09T09:33:39.575Z'
+- id:
+    _kind: ref
+    val: p:demo:r:273bc973-0337ce3d
+    dis: Headquarters
+  site:
+    _kind: marker
+  dis: Headquarters
+  geoCity: Richmond
+  area: 
+    _kind: number
+    val: 140797
+    unit: ft²
+  mod:
+    _kind: dateTime
+    val: '2020-11-09T09:33:39.534Z'
